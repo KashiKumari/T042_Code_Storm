@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women Safety Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Women Safety Portal</h1>
+    <p>Report harassment anonymously and get support</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Report an Incident</h2>
+      <form id="reportForm">
+        <label for="incident">Type of Incident:</label>
+        <select id="incident" required>
+          <option value="verbal">Verbal Harassment</option>
+          <option value="physical">Physical Harassment</option>
+          <option value="online">Online Harassment</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="details">Details:</label>
+        <textarea id="details" rows="5" required></textarea>
+
+        <label for="contact">Optional Contact Info:</label>
+        <input type="text" id="contact" placeholder="Email or Phone (optional)">
+
+        <button type="submit">Submit Report</button>
+      </form>
+      <p id="status"></p>
+    </section>
+
+    <section class="support-section">
+      <h2>Support</h2>
+      <ul>
+        <li> Mental Health Helpline: 1800-123-456</li>
+        <li>Legal Helpdesk: legal@example.com</li>
+        <li> Internal Complaints Committee (ICC)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Women Safety Portal</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
